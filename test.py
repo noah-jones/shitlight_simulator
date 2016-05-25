@@ -4,8 +4,8 @@
 
 import time
 
+import shitlight_simulator    # must be in python path
 
-import Main
 
 
 x_size = 8
@@ -13,7 +13,7 @@ y_size = 8
 
 refresh_rate = 0.02
 
-light = Main.Light(x_size, y_size)
+light = shitlight_simulator.Light(x_size, y_size)
 
 
 light.set_color((0,255,0))

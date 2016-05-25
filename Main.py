@@ -31,7 +31,7 @@ class Light(threading.Thread):
 
         from PyQt5 import QtCore, QtGui, QtWidgets
 
-        from Gui import Canvas
+        from .Gui import Canvas
 
         self.app = QtWidgets.QApplication(['shitlight'])
         self.canvas = Canvas(self.x_size, self.y_size)
