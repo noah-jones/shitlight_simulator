@@ -76,7 +76,7 @@ class Canvas(QtWidgets.QWidget):
                     x = size.width() / self.x_size * ( i + .5)
                     y = size.height() / self.y_size * (j + .5)
                     #gradient.setCenter(QtCore.QPoint(x, y))
-                    qp.drawEllipse(QtCore.QPoint(x, y), 10, 10)
+                    qp.drawEllipse(QtCore.QPoint(x, y), 20, 20)
   
         elif self.color == None:
 
@@ -90,7 +90,7 @@ class Canvas(QtWidgets.QWidget):
                     x = size.width() / self.x_size * ( i + .5)
                     y = size.height() / self.y_size * (j + .5)
                     #gradient.setCenter(QtCore.QPoint(x, y))
-                    qp.drawEllipse(QtCore.QPoint(x, y), 10, 10)
+                    qp.drawEllipse(QtCore.QPoint(x, y), 20, 20)
 
 
     def set_color(self):
