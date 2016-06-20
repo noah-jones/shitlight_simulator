@@ -84,7 +84,7 @@ class Canvas(QtWidgets.QWidget):
 
             for i in range(self.x_size):
                 for j in range(self.y_size):
-                    color1 = self.colors[i*self.x_size+j]
+                    color1 = self.colors[i*self.y_size+j]
                     brush.setColor(QtGui.QColor(*color1))
                     qp.setBrush(brush)
                     x = size.width() / self.x_size * ( i + .5)
