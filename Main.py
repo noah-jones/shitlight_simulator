@@ -23,9 +23,6 @@ class Light(threading.Thread):
 
         self.start()
 
-        while self.running == False:
-            pass
-
         
     def run(self):
 

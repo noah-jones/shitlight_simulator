@@ -2,7 +2,7 @@
 
 try:
     import queue
-except Import Error:
+except ImportError:
     import Queue as queue   # python2.7
         
 
@@ -15,7 +15,7 @@ class Canvas(QtWidgets.QWidget):
     
 
     def __init__(self, x_size, y_size):
-        super().__init__()
+        super(Canvas, self).__init__()
 
         if x_size == None:
             self.x_size = 8
