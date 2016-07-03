@@ -44,6 +44,7 @@ class Light(threading.Thread):
 
     def set_color(self, colors):
 
-        self.canvas.queue.put(colors)
-        self.canvas.trigger.emit()
+        if self.canvas:   # wait until initilized
+            self.canvas.queue.put(colors)
+            self.canvas.trigger.emit()
 
